@@ -42,11 +42,14 @@ public class Activity2 extends AppCompatActivity {
         if(list.contains("Go and sleep well")){
             gs.setVisibility(View.VISIBLE);
         }
-        if(s>=4){
-            score.setText("You are Safe");
+        if (s >= 45) {
+            score.setText("Score : " + String.valueOf(s) + "\n" + "Safe");
         }
-        if(s<4){
-            score.setText("Unsafe..! Prone to Covid");
+        if (s == 0) {
+            score.setText("No selections found");
+        }
+        if (s < 45) {
+            score.setText("Score : " + String.valueOf(s) + "\n" + "Prone to Covid");
         }
 
     }

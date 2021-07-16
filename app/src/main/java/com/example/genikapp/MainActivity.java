@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         ginger_yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                score+=1;
+                score+=30;
             }
         });
         ginger_no.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         alcohol_yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                score+=1;
+                score-=10;
 
             }
         });
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         smoking_yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                score+=1;
+                score-=20;
 
             }
         });
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         gs_yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                score+=1;
+                score+=20;
             }
         });
         gs_no.setOnClickListener(new View.OnClickListener() {
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
     public void ML(View view) {
         String a = pushup.getText().toString();
         int b2 = Integer .parseInt(a);
-        int y = (int) (-7.044*b2+49.732);
+        int y = (int) (2.416*b2-10.946);
         textView9.setText("Improvement in Immunity against Covid-19 by Percentage"+y);
     }
 }
