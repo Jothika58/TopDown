@@ -15,7 +15,6 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
-
         score = findViewById(R.id.score);
         garlic=findViewById(R.id.garlic);
         pushup=findViewById(R.id.pushup);
