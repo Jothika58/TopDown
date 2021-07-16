@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/garlic"
+        android:text="Garlic is good for Cancer"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pushup"
+        app:layout_constraintTop_toBottomOf="@id/score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pushup"
+        android:text="Regular Exercise makes you fit"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/smoking"
+        app:layout_constraintTop_toBottomOf="@id/garlic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smoking"
+        android:text="Smoking causes Cancer"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/alcohol"
+        app:layout_constraintTop_toBottomOf="@id/pushup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alcohol"
+        android:text="Alcohol is injurious to health"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/gs"
+        app:layout_constraintTop_toBottomOf="@id/smoking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gs"
+        android:text="Go and sleep well"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/stress"
+        app:layout_constraintTop_toBottomOf="@id/alcohol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stress"
+        android:text="Do yoga and meditation"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/gs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
